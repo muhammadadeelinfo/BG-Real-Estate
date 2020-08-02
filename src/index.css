@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montseratt", sans-serif;
+}
+
+.appBackground {
+  background-image: url("./assets/backgroundPic.png");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+  position: fixed;
+  top: 55px;
+  bottom: 0px;
+  width: 100%;
+}
