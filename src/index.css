@@ -18,3 +18,12 @@ body {
   bottom: 0px;
   width: 100%;
 }
+.searchBox {
+  padding: 10px;
+}
+.cardBox {
+  padding-bottom: 0;
+}
+.mainContainer {
+  padding-bottom: 20px;
+}

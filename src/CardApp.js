@@ -6,7 +6,7 @@ export default class CardApp extends Component {
   render() {
     return (
       <>
-        <Card>
+        <Card className="cardBox">
           <Card.Header>Featured</Card.Header>
           <Card.Body>
             <Card.Title>Special title treatment</Card.Title>
