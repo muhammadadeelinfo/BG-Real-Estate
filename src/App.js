@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./index.css";
-import { Button } from "react-bootstrap";
+import { Button, ButtonGroup } from "react-bootstrap";
 
 import NavBarApp from "./NavBarApp";
 import SearchAll from "./SearchAll";
-import PurchaseApp from "./PurchaseApp";
+import BuyApp from "./BuyApp";
 import SaleApp from "./SaleApp";
 import {
   BrowserRouter as Router,
@@ -23,12 +23,16 @@ export default class App extends Component {
         <div className="mainContainer">
           <Router>
             <switch>
-              <Route exact path="/PurchaseApp" component={PurchaseApp} />
+              <Route exact path="/BuyApp" component={BuyApp} />
               <Route exact path="/SearchAll" component={SearchAll} />
               <Route exact path="/SaleApp" component={SaleApp} />
             </switch>
-            <div className={"fixed-bottom"} style={{ textAlign: "center" }}>
-              <Link to="/PurchaseApp" className="btn btn-success">
+            <ButtonGroup
+              className="mb-2"
+              className={"fixed-bottom"}
+              style={{ textAlign: "center" }}
+            >
+              <Link to="/BuyApp" className="btn btn-success">
                 Buy
               </Link>
               <Link to="/SaleApp" className="btn btn-primary">
@@ -38,7 +42,7 @@ export default class App extends Component {
                 Search All
               </Link>
               <Link className="btn btn-info">Alerts</Link>
-            </div>
+            </ButtonGroup>
           </Router>
         </div>
       </>
